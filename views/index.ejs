@@ -1,0 +1,26 @@
+<%- include ('partials/head.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+<link rel="stylesheet" href="/css/index.css">
+<body>
+    
+     
+     
+    <form method="POST" action="control"  class="container" >
+ 
+        <h2>Controle  de presença </h2>
+        
+        Aluno:<div class="aluno" name="aluno" id='aluno'></div>
+    
+        <input class="form-control" placeholder="Aluno:" id="textinput" name="textinput" value="" type="text">
+        <br><br><button name="button" class="btn btn-danger">Enviar</butto>
+        <p id="alunoPresenca"></p>
+       
+    
+    <div id="presenca"></div>
+    
+    <p id="demo"></p>
+    </form>
+
+</body>
+<%- include ('partials/footer.ejs') %>
+
